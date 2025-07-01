@@ -1,0 +1,22 @@
+{
+  "name": "jurify/core",
+  "description": "Sistema jurídico para controle de clientes e pagamentos",
+  "type": "project",
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+        "Api\\": "src/Api/",
+        "Application\\": "src/Application/",
+        "Domain\\": "src/Domain/",
+        "Infrastructure\\": "src/Infrastructure/",
+        "Config\\": "config/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "echo 'Jurify instalado com sucesso.'"
+    ]
+  }
+}
